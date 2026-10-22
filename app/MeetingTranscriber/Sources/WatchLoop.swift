@@ -402,6 +402,7 @@ class WatchLoop {
         if !Task.isCancelled {
             update { next in
                 next.phase = .watching
+                next.currentMeeting = nil
                 next.detail = "Polling for meetings..."
             }
         }
